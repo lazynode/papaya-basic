@@ -1,0 +1,15 @@
+Language: Cpp
+BasedOnStyle: LLVM
+UseTab: Never
+IndentWidth: 2
+TabWidth: 2
+BreakBeforeBraces: Allman
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: false
+ColumnLimit: 0
+NamespaceIndentation: None
+FixNamespaceComments: false
+SortIncludes: CaseSensitive
+AlignArrayOfStructures: Right
+ContinuationIndentWidth: 2
+AlignAfterOpenBracket: BlockIndent
