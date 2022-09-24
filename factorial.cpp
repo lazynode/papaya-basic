@@ -16,8 +16,7 @@ int main()
           StrSUB(1), // `StrSUB(1)` is the stack top (right) operation equivalent to `Set("num", var("num") - 1)`
         }
       ),
-      MemorySet(0, var("prod")),
-      Ret(0, 0x20),
+      RetVal(var("prod")),
     }
   );
 }
