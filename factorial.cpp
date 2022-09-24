@@ -5,7 +5,7 @@ using namespace basic::extension;
 
 int main()
 {
-  std::cout << SCOPE( // WHILESCOPE(var, body): define a variable and use it in body
+  std::cout << SCOPE( // SCOPE(var, body): define a variable and use it in body
     {"prod", 1},      // variable def and init
     {
       WHILESCOPE(             // WHILESCOPE(var, cond, body): a while loop
