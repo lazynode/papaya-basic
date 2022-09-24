@@ -3943,5 +3943,13 @@ classdef::base::Stmt StorageSetSlot(const classdef::base::Expr index, const clas
 {
   return classdef::StorageSet(index * 0x20, val);
 }
+classdef::base::Stmt RetVal(const classdef::base::Expr val)
+{
+  return classdef::SECTION({classdef::MemorySet(0, val), classdef::Ret(0, 0x20)});
+}
+classdef::base::Stmt RvtVal(const classdef::base::Expr val)
+{
+  return classdef::SECTION({classdef::MemorySet(0, val), classdef::Rvt(0, 0x20)});
+}
 }
 }
